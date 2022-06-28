@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="springboot.learn.auto_generate_code.dao.SysUserDao">
+
+    <resultMap type="springboot.learn.auto_generate_code.entity.SysUser" id="SysUserMap">
+        <result property="id" column="id" jdbcType="VARCHAR"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="realname" column="realname" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="salt" column="salt" jdbcType="VARCHAR"/>
+        <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+        <result property="sex" column="sex" jdbcType="INTEGER"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="orgCode" column="org_code" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+        <result property="thirdId" column="third_id" jdbcType="VARCHAR"/>
+        <result property="thirdType" column="third_type" jdbcType="VARCHAR"/>
+        <result property="activitiSync" column="activiti_sync" jdbcType="INTEGER"/>
+        <result property="workNo" column="work_no" jdbcType="VARCHAR"/>
+        <result property="post" column="post" jdbcType="VARCHAR"/>
+        <result property="telephone" column="telephone" jdbcType="VARCHAR"/>
+        <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="userIdentity" column="user_identity" jdbcType="INTEGER"/>
+        <result property="departIds" column="depart_ids" jdbcType="VARCHAR"/>
+        <result property="relTenantIds" column="rel_tenant_ids" jdbcType="VARCHAR"/>
+        <result property="clientId" column="client_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 批量插入 -->
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into idea_test.sys_user(username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, third_id, third_type, activiti_sync, work_no, post, telephone, create_by, create_time, update_by, update_time, user_identity, depart_ids, rel_tenant_ids, client_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.username}, #{entity.realname}, #{entity.password}, #{entity.salt}, #{entity.avatar}, #{entity.birthday}, #{entity.sex}, #{entity.email}, #{entity.phone}, #{entity.orgCode}, #{entity.status}, #{entity.delFlag}, #{entity.thirdId}, #{entity.thirdType}, #{entity.activitiSync}, #{entity.workNo}, #{entity.post}, #{entity.telephone}, #{entity.createBy}, #{entity.createTime}, #{entity.updateBy}, #{entity.updateTime}, #{entity.userIdentity}, #{entity.departIds}, #{entity.relTenantIds}, #{entity.clientId})
+        </foreach>
+    </insert>
+    <!-- 批量插入或按主键更新 -->
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into idea_test.sys_user(username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, third_id, third_type, activiti_sync, work_no, post, telephone, create_by, create_time, update_by, update_time, user_identity, depart_ids, rel_tenant_ids, client_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.realname}, #{entity.password}, #{entity.salt}, #{entity.avatar}, #{entity.birthday}, #{entity.sex}, #{entity.email}, #{entity.phone}, #{entity.orgCode}, #{entity.status}, #{entity.delFlag}, #{entity.thirdId}, #{entity.thirdType}, #{entity.activitiSync}, #{entity.workNo}, #{entity.post}, #{entity.telephone}, #{entity.createBy}, #{entity.createTime}, #{entity.updateBy}, #{entity.updateTime}, #{entity.userIdentity}, #{entity.departIds}, #{entity.relTenantIds}, #{entity.clientId})
+        </foreach>
+        on duplicate key update
+         username = values(username) , realname = values(realname) , password = values(password) , salt = values(salt) , avatar = values(avatar) , birthday = values(birthday) , sex = values(sex) , email = values(email) , phone = values(phone) , org_code = values(org_code) , status = values(status) , del_flag = values(del_flag) , third_id = values(third_id) , third_type = values(third_type) , activiti_sync = values(activiti_sync) , work_no = values(work_no) , post = values(post) , telephone = values(telephone) , create_by = values(create_by) , create_time = values(create_time) , update_by = values(update_by) , update_time = values(update_time) , user_identity = values(user_identity) , depart_ids = values(depart_ids) , rel_tenant_ids = values(rel_tenant_ids) , client_id = values(client_id)     </insert>
+
+</mapper>
+

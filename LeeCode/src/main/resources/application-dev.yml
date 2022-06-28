@@ -1,0 +1,10 @@
+# 应用名称
+person:
+  name: 开发配置
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: HelloWorld

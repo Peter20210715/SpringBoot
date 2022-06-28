@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoGenerateCode/AutoGenerateCode.iml" filepath="$PROJECT_DIR$/AutoGenerateCode/AutoGenerateCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeeCode/LeeCode.iml" filepath="$PROJECT_DIR$/LeeCode/LeeCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot.iml" />
+    </modules>
+  </component>
+</project>

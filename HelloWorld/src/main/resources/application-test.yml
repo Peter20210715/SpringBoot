@@ -1,0 +1,38 @@
+# 应用名称
+#测试用的配置文档：
+server:
+  port: 8089
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+#  撰写yaml文档得规则：
+#map得写法
+friends:
+  name: jack
+  age: 20
+
+#map得第二种写法：friends: {name: jack,age: 20}
+
+#数组：list/set得写法
+books:
+  - math
+  - english
+  - chinese
+# list/set得第二种写法：books: [math,english,chinese]
+
+book:
+  name: jack
+  time: 2020/11/19
+  price: 10.9
+  map: {k1: v1,k2: v2}
+  list:
+    - s1
+    - s2
+    - s3
+  math:
+    teacherName: jerry
+    nums: 10

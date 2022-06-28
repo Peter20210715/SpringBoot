@@ -1,0 +1,11 @@
+# 应用名称
+#测试用的配置文档：
+server:
+  port: 8090
+spring:
+  application:
+    name: helloworld
+person:
+  name: 测试配合
+
+
