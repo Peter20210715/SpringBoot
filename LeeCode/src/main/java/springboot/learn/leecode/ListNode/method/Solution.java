@@ -1,6 +1,6 @@
 package springboot.learn.leecode.ListNode.method;
 
-import springboot.learn.leecode.ListNode.ListNode;
+import springboot.learn.leecode.ListNode.entity.ListNode;
 
 /**
  * <p>Title: Solution$</p >
@@ -8,7 +8,7 @@ import springboot.learn.leecode.ListNode.ListNode;
  * <p>Copyright: Copyright (c) $</p >
  * <p>Company: inspur </p >
  *
- * @author guochunjie （换成自己的）
+ * @author WangZhongming
  * @version 1.0
  * @createtime $ $
  */

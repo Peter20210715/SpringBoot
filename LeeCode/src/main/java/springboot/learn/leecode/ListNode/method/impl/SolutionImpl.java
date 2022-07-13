@@ -1,6 +1,7 @@
-package springboot.learn.leecode.ListNode.method;
+package springboot.learn.leecode.ListNode.method.impl;
 
-import springboot.learn.leecode.ListNode.ListNode;
+import springboot.learn.leecode.ListNode.entity.ListNode;
+import springboot.learn.leecode.ListNode.method.Solution;
 
 /**
  * <p>Title: SolutionImp$</p >
@@ -13,7 +14,7 @@ import springboot.learn.leecode.ListNode.ListNode;
  * @createtime $ $
  */
 
-public class SolutionImp implements Solution {
+public class SolutionImpl implements Solution {
     @Override
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         /**

@@ -1,4 +1,4 @@
-package springboot.learn.leecode.ListNode;
+package springboot.learn.leecode.ListNode.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
